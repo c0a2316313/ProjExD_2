@@ -27,7 +27,7 @@ def check_bound(obj_rct: pg.Rect) -> tuple[bool, bool]:
         tate = False
     return yoko, tate
 
-def create_bomb_images_and_accs() -> tuple[list[pg.Surface], list[int]]:
+def bomsaizu() -> tuple[list[pg.Surface], list[int]]:
     bb_imgs = []
     bb_accs = [a for a in range(1, 11)]  
     
@@ -46,7 +46,7 @@ def main():
     kk_rct = kk_img.get_rect()
     kk_rct.center = 300, 200
     
-    bb_imgs, bb_accs = create_bomb_images_and_accs()
+    bb_imgs, bb_accs = bomsaizu()
     
     bb_rct = bb_imgs[0].get_rect()
     bb_rct.center = random.randint(0, WIDTH), random.randint(0, HEIGHT)
